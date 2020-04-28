@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0AC15D7A-1197-73A3-785A-7B5F436CC2B7}</ProjectGuid>
+    <ProjectGuid>{36546F14-CBC4-133D-8961-CE3F73701623}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -97,77 +97,99 @@
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\Editor\PathSceneToolEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDEditorProgressWindow.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDHelpWindow.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDNotification.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDObjExporter.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDRoadEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDRoadIntersectionEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDRoadSystemEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDRoadSystemEditorMenu.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDSaveWindow.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDSplineCEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDSplineFEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDSplineIEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDSplineNEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDTerrainEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\Editor\GSDWizard.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARKit">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARSubsystems">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARSubsystems.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARCore">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARCore.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARKit.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -365,7 +387,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -730,8 +752,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{44089878-AC89-EFEE-3CEF-23C67AA6AF17}</Project>
+      <Project>{B0F113DE-65EB-BD65-4F8A-C584C002C785}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreator.csproj">
+      <Project>{0285DABA-3B8C-3E7A-05C0-C7E78BBB3910}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreatorEditor.csproj">
+      <Project>{F491E765-0684-C904-04D6-F88FE6706777}</Project>
+      <Name>PathCreatorEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

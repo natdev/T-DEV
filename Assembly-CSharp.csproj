@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{44089878-AC89-EFEE-3CEF-23C67AA6AF17}</ProjectGuid>
+    <ProjectGuid>{B0F113DE-65EB-BD65-4F8A-C584C002C785}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ARTapToPlaceObject.cs" />
+    <Compile Include="Assets\Follower.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -109,22 +109,56 @@
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Mpc.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\PathFollower.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\PathPlacer.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\PathSceneTool.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\PathSpawner.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRigidBody.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoad.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadAutomation.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadEdgeObjects.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadIntersection.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadMeshSplinate.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadSystem.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadUtility.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadUtilityEditor.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRoadUtilityT.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDRootUtil.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDTerrain.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDTrafficLightController.cs" />
+    <Compile Include="Assets\RoadArchitect\GSDUnitTests.cs" />
+    <Compile Include="Assets\RoadArchitect\Spline\GSDSplineC.cs" />
+    <Compile Include="Assets\RoadArchitect\Spline\GSDSplineF.cs" />
+    <Compile Include="Assets\RoadArchitect\Spline\GSDSplineI.cs" />
+    <Compile Include="Assets\RoadArchitect\Spline\GSDSplineN.cs" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDShoulderDirtDX11.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDStandardTiling.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDShoulderDirt.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDStandardOffset.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDRoadShaderDX11.shader" />
+    <None Include="Assets\RoadArchitect\Readme.txt" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\LutGen.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDRoadShaderLowDX11.shader" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDTransparentWithShadows.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\Documentation\Documentation.txt" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDRoadShaderLow.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
@@ -133,6 +167,7 @@
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDTransparentWithShadowsZ.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
@@ -143,6 +178,7 @@
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\Common.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\RoadArchitect\Shaders\GSDRoadShader.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\Bloom.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\DepthOfField.shader" />
@@ -151,71 +187,77 @@
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Low Poly 3D Garbage &amp; Tow Trucks\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <Reference Include="Unity.XR.Management">
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARKit">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARSubsystems">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARSubsystems.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARCore">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARCore.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARKit.Editor">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -748,6 +790,16 @@
     <Reference Include="Boo.Lang">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="PathCreator.csproj">
+      <Project>{0285DABA-3B8C-3E7A-05C0-C7E78BBB3910}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreatorEditor.csproj">
+      <Project>{F491E765-0684-C904-04D6-F88FE6706777}</Project>
+      <Name>PathCreatorEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

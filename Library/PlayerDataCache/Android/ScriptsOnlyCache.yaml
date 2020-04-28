@@ -1,7 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ARTapToPlaceObject
+    - Mpc
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.ARFoundation.dll:
@@ -9,9 +9,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARCameraManager
     - UnityEngine.XR.ARFoundation.ARInputManager
     - UnityEngine.XR.ARFoundation.ARPlane
-    - UnityEngine.XR.ARFoundation.ARPlaneManager
-    - UnityEngine.XR.ARFoundation.ARPlaneMeshVisualizer
-    - UnityEngine.XR.ARFoundation.ARRaycastManager
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
     UnityEditor.TestRunner.dll:
@@ -21,7 +18,7 @@ ScriptsOnlyBuild:
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
   sceneClasses:
-    Assets/T-DEV2.unity:
+    Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -42,9 +39,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 72
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -53,34 +56,32 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11834}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11932}
     - Class: 114
-      Script: {instanceID: 11874}
+      Script: {instanceID: 11970}
     - Class: 114
-      Script: {instanceID: 11906}
-    - Class: 114
-      Script: {instanceID: 12174}
-    - Class: 114
-      Script: {instanceID: 12728}
-    - Class: 114
-      Script: {instanceID: 12934}
-    - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12876}
     - Class: 114
       Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13264}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13462}
+    - Class: 114
+      Script: {instanceID: 13626}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 120
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -89,6 +90,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 14285c3bd5db9ec1880c467fd290624a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: PathSpawner
   - hash:
       serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
@@ -157,10 +164,22 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRGeneralSettings
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 0eaba8fcbfa6859be3e02bfe60166ccf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: PathPlacer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -179,6 +198,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARRaycastManager
+  - hash:
+      serializedVersion: 2
+      Hash: bedbb154cb1e883868dc88aadfbd719e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDRoadSystem
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -229,6 +254,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 179bf529eaa2bf3a71d50a702429089b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDRoadIntersection
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -259,6 +290,12 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: 7eaee26442f4e0696721c2c8537374b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mpc
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -281,6 +318,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 48ce9d21a5836344c65fc66b4fff7923
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDSplineF
   - hash:
       serializedVersion: 2
       Hash: e8733e39efa851172df1c9eaef062265
@@ -325,10 +368,28 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 3355fe83554a38c11f851b1c56ecdd0e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDTerrain
+  - hash:
+      serializedVersion: 2
+      Hash: 7966b4f3648d44aebd31e5b2b0b53b96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Follower
+  - hash:
+      serializedVersion: 2
       Hash: 8f1e591808db709cb76cb7d85cb9a8d7
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: AREnvironmentProbeManager
+  - hash:
+      serializedVersion: 2
+      Hash: bdf9c62fa6c93d55ef7c3d53064b04ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDSplineC
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -343,6 +404,12 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
+      Hash: 55f495c4b63fa949eeff9f2a0c437cd6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDSplineN
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -355,6 +422,18 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: d8441d3bef38b05ce402b440735530b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDRigidBody
+  - hash:
+      serializedVersion: 2
+      Hash: b233df5c6f9cea11b87e4e515556b495
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: GeneratePathExample
+  - hash:
+      serializedVersion: 2
       Hash: 0568889868f6fb744b2ecba530349fde
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -365,6 +444,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: bfd0fa381ea0fbb32773b78e2b1e2c06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: RoadMeshCreator
   - hash:
       serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
@@ -395,6 +480,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 1532436743ef194dbf67c97ed7b8e9f1
+    assemblyName: PathCreator.dll
+    namespaceName: PathCreation
+    className: GlobalDisplaySettings
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -431,6 +522,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 2023515a447b9089d205e8fe2ea2e7ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: PathFollower
   - hash:
       serializedVersion: 2
       Hash: 840e65a413cc46ebbbbf200f4362a70c
@@ -487,16 +584,22 @@ ScriptsOnlyBuild:
     className: ARTrackedImage
   - hash:
       serializedVersion: 2
+      Hash: 5455126194c7fb60e2136719105446c8
+    assemblyName: PathCreator.dll
+    namespaceName: PathCreation
+    className: PathCreator
+  - hash:
+      serializedVersion: 2
       Hash: ca2a58dd7363525cbd2f65b2a150b41b
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARCameraManager
   - hash:
       serializedVersion: 2
-      Hash: 2405c4962b0815da60cab2a20badc659
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ARTapToPlaceObject
+      Hash: 24c74cc0d527a06113f2b967042769f0
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEditor.XR.LegacyInputHelpers
+    className: CameraOffset
   - hash:
       serializedVersion: 2
       Hash: d0976f085ee327327a35839ca3cb80f1
@@ -583,6 +686,12 @@ ScriptsOnlyBuild:
     className: ARMeshManager
   - hash:
       serializedVersion: 2
+      Hash: 48ce9d21a5836344c65fc66b4fff7923
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDSplineI
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -649,6 +758,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: 8ab9295d94483c961936d82d233d3df2
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRManagerSettings
+  - hash:
+      serializedVersion: 2
       Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -659,6 +774,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: b9ee98ac4ac554b24616fd379df67981
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GSDRoad
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -697,5 +818,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/T-DEV2.unity
-  playerPath: C:/Users/natha/game training/t-dev/T-DEV/builds/trashcan-android.apk
+  - Assets/Scenes/SampleScene.unity
+  playerPath: C:/Users/natha/game training/t-dev/T-DEV-2/t-dev.apk
