@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5079205733266746832
+  m_GuidHigh: 3703083514885545634
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4949222649648755826
+      m_GuidHigh: 14117215456825489812
+    m_SerializedTextureGuid:
+      m_GuidLow: 10467764579498007643
+      m_GuidHigh: 6635794507809775801
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Remplie
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5580045868180696465
+      m_GuidHigh: 3880133949477909156
+    m_SerializedTextureGuid:
+      m_GuidLow: 4851722635749825909
+      m_GuidHigh: 14404539538872279179
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Plusieurs
+    m_Texture: {fileID: 0}
