@@ -293,7 +293,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageTrackedText: {fileID: 0}
   arObjectsToPlace:
-  - {fileID: 6078962090117726226, guid: ca0dad0346e122f4cb9713f7616432e1, type: 3}
   - {fileID: 5113684328031672402, guid: 2de3c9108904c334c9a64db64264f668, type: 3}
   scaleFactor: {x: 1, y: 1, z: 1}
 --- !u!114 &227865981

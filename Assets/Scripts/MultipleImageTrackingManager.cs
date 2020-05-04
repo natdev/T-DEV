@@ -7,15 +7,13 @@ using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class MultipleImageTrackingManager : MonoBehaviour
 {
-    GameObject Scene;
     private GameObject Target_1;
     private GameObject Target_2;
-    GameObject Plane;
+    private GameObject Plane;
     private GameObject Seeker;
     float speed = 1;
     Vector3[] path;
     int targetIndex;
-    ARTrackedImage _image;
     [SerializeField]
     private Text imageTrackedText;
     [SerializeField]
@@ -27,8 +25,6 @@ public class MultipleImageTrackingManager : MonoBehaviour
     private ARTrackedImageManager m_TrackedImageManager;
 
     private Dictionary<string, GameObject> arObjects = new Dictionary<string, GameObject>();
-    private Dictionary<string, GameObject> trashes = new Dictionary<string, GameObject>();
-
     void Awake()
     {
 
@@ -72,7 +68,8 @@ public class MultipleImageTrackingManager : MonoBehaviour
 
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
-            arObjects[trackedImage.name].SetActive(false);
+        
+    arObjects["Plusieurs"].SetActive(false);
         }
     }
 
@@ -80,39 +77,22 @@ public class MultipleImageTrackingManager : MonoBehaviour
     {
         // Display the name of the tracked image in the canvas
         //imageTrackedText.text = trackedImage.referenceImage.name;
-
+        Seeker = arObjects["Plusieurs"].transform.Find("Seeker").gameObject;
+        Target_1 = arObjects["Plusieurs"].transform.Find("Target_1").gameObject;
+        Target_2 = arObjects["Plusieurs"].transform.Find("Target_2").gameObject;
 
         // Assign and Place Game Object
-        if (trackedImage.referenceImage.name == "Remplie")
+        if (trackedImage.referenceImage.name == "Plusieurs")
         {
-            //yield return new WaitForSeconds(1);
-            Plane = arObjects[trackedImage.referenceImage.name].transform.Find("Plane").gameObject;
-            Seeker = arObjects[trackedImage.referenceImage.name].transform.Find("Seeker").gameObject;
-            Target_1 = arObjects[trackedImage.referenceImage.name].transform.Find("Target_1").gameObject;
-            Plane.GetComponent<Renderer>().material.color = Color.red;
-            //yield return new WaitForSeconds(2); 
-           
-                PathRequestManager.RequestPath(Seeker.transform.position, Target_1.transform.position, OnPathFound);
+            PathRequestManager.RequestPath(Seeker.transform.position, Target_1.transform.position, OnPathFound);
         }
         else
         {
-            Plane = arObjects[trackedImage.referenceImage.name].transform.Find("Plane").gameObject;
-            Seeker = arObjects[trackedImage.referenceImage.name].transform.Find("Seeker").gameObject;
-            Target_1 = arObjects[trackedImage.referenceImage.name].transform.Find("Target_1").gameObject;
-            Target_2 = arObjects[trackedImage.referenceImage.name].transform.Find("Target_2").gameObject;
-            trashes.Add(Target_1.name, Target_1);
-            trashes.Add(Target_2.name, Target_2);
-            Plane.GetComponent<Renderer>().material.color = Color.yellow;
-
-            foreach (KeyValuePair<string, GameObject> trash in trashes)
-            {
-                PathRequestManager.RequestPath(Seeker.transform.position, trash.Value.transform.position, OnPathFound);
-            }
-                
-
+            PathRequestManager.RequestPath(Seeker.transform.position, Target_2.transform.position, OnPathFound);
         }
+        
 
-        AssignGameObject(trackedImage.referenceImage.name, trackedImage.transform.position);
+        AssignGameObject("Plusieurs", trackedImage.transform.position);
 
 
         Debug.Log($"trackedImage.referenceImage.name: {trackedImage.referenceImage.name}");

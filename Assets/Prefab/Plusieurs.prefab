@@ -334,7 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5113684328031672391}
   m_Layer: 0
-  m_Name: Signal _2
+  m_Name: Plusieurs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
   - terrainMask:
       serializedVersion: 2
       m_Bits: 1024
-    terrainPenalty: 100
+    terrainPenalty: 50
 --- !u!1001 &9088085122263275753
 PrefabInstance:
   m_ObjectHideFlags: 0
