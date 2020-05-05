@@ -52,8 +52,6 @@ public class MultipleImageTrackingManager : MonoBehaviour
     }
 
 
-
-
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
         foreach (ARTrackedImage trackedImage in eventArgs.added)
@@ -82,13 +80,16 @@ public class MultipleImageTrackingManager : MonoBehaviour
         Target_2 = arObjects["Plusieurs"].transform.Find("Target_2").gameObject;
 
         // Assign and Place Game Object
-        if (trackedImage.referenceImage.name == "Plusieurs")
-        {
+        if (trackedImage.referenceImage.name == "Plusieurs"){
+            PathRequestManager.RequestPath(Seeker.transform.position, Target_1.transform.position, OnPathFound);
+            PathRequestManager.RequestPath(Seeker.transform.position, Target_2.transform.position, OnPathFound);
+        }
+        else if(trackedImage.referenceImage.name == "Remplie"){
             PathRequestManager.RequestPath(Seeker.transform.position, Target_1.transform.position, OnPathFound);
         }
         else
         {
-            PathRequestManager.RequestPath(Seeker.transform.position, Target_2.transform.position, OnPathFound);
+
         }
         
 

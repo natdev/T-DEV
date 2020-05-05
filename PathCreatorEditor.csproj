@@ -68,11 +68,11 @@
     <Compile Include="Assets\PathCreator\Core\Editor\Helper\ScreenSpacePolyLine.cs" />
     <Compile Include="Assets\PathCreator\Core\Editor\PathEditor.cs" />
     <None Include="Assets\PathCreator\Core\Editor\PathCreatorEditor.asmdef" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/natha/game training/t-dev/T-DEV-2/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
